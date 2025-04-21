@@ -7,6 +7,7 @@ import filmsRoutes from "./routes/filmsRoutes.js";
 import sessionsRoutes from "./routes/sessionsRoutes.js";
 import errorhandling from "./middlewares/errorHandler.js";
 import createCineTable from "./data/createCineTable.js";
+import createFilmTable from "./data/createFilmTable.js";
 
 dotenv.config();
 
@@ -26,7 +27,8 @@ app.use("/api", sessionsRoutes);
 app.use(errorhandling);
 
 //create tables if not exists
-createCineTable()
+createCineTable();
+createFilmTable();
 
 //Testing PG connection
 

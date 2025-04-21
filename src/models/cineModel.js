@@ -10,18 +10,18 @@ export const getCineByIdService = async (id) => {
   return result.rows[0];
 };
 
-export const createCineService = async (cineName, city, state) => {
+export const createCineService = async (cine_name, city, state) => {
   const result = await pool.query(
-    "INSERT INTO cines (cineName, city, state) VALUES ($1, $2, $3) RETURNING *",
-    [cineName, city, state]
+    "INSERT INTO cines (cine_name, city, state) VALUES ($1, $2, $3) RETURNING *",
+    [cine_name, city, state]
   );
   return result.rows[0];
 };
 
-export const updateCineService = async (cineName, city, state, id) => {
+export const updateCineService = async (cine_name, city, state, id) => {
   const result = await pool.query(
-    "UPDATE cines SET cineName = $1, city = $2, state = $3 WHERE id = $4 RETURNING *",
-    [cineName, city, state, id]
+    "UPDATE cines SET cine_name = $1, city = $2, state = $3 WHERE id = $4 RETURNING *",
+    [cine_name, city, state, id]
   );
   return result.rows[0];
 };

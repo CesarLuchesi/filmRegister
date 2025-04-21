@@ -31,7 +31,7 @@ const states = [
 ];
 
 const cineSchema = Joi.object({
-  cineName: Joi.string().min(3).max(100).required(),
+  cine_name: Joi.string().min(3).max(100).required(),
   city: Joi.string().min(3).max(100).required(),
   state: Joi.string()
     .length(2)

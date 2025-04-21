@@ -15,9 +15,9 @@ const handleResponse = (res, status, message, data = null) => {
 };
 
 export const createCine = async (req, res, next) => {
-  const { cineName, city, state } = req.body;
+  const { cine_name, city, state } = req.body;
   try {
-    const newCine = await createCineService(cineName, city, state);
+    const newCine = await createCineService(cine_name, city, state);
     handleResponse(res, 201, "Cine created successfully", newCine);
   } catch (err) {
     next(err);
@@ -46,10 +46,10 @@ export const getCineById = async (req, res, next) => {
 };
 
 export const updateCine = async (req, res, next) => {
-  const { cineName, city, state } = req.body;
+  const { cine_name, city, state } = req.body;
   try {
     const updatedCine = await updateCineService(
-      cineName,
+      cine_name,
       city,
       state,
       req.params.id
