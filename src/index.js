@@ -8,6 +8,7 @@ import sessionsRoutes from "./routes/sessionsRoutes.js";
 import errorhandling from "./middlewares/errorHandler.js";
 import createCineTable from "./data/createCineTable.js";
 import createFilmTable from "./data/createFilmTable.js";
+import createSessionTable from "./data/createSessionTable.js";
 
 dotenv.config();
 
@@ -29,7 +30,7 @@ app.use(errorhandling);
 //create tables if not exists
 createCineTable();
 createFilmTable();
-
+createSessionTable();
 //Testing PG connection
 
 app.get("/", async (req, res) => {
