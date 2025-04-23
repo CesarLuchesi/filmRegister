@@ -17,13 +17,12 @@ const handleResponse = (res, status, message, data = null) => {
 };
 
 export const createSession = async (req, res, next) => {
-  const { cine_id, film_id, day_week, time } = req.body;
+  const { cine_id, film_id, schedules } = req.body;
   try {
     const newSession = await createSessionService(
       cine_id,
       film_id,
-      day_week,
-      time
+      schedules,
     );
     handleResponse(res, 201, "Session created successfully", newSession);
   } catch (err) {
@@ -53,15 +52,17 @@ export const getSessionById = async (req, res, next) => {
 };
 
 export const updateSession = async (req, res, next) => {
-  const { cine_id, film_id, day_week, time } = req.body;
+  const { cine_id, film_id, schedules } = req.body;
+  const { id } = req.params;
+  
   try {
     const updatedSession = await updateSessionService(
+      id,
       cine_id,
       film_id,
-      day_week,
-      time,
-      req.params.id
+      schedules
     );
+    
     if (!updatedSession) {
       return handleResponse(res, 404, "Session not found");
     }
