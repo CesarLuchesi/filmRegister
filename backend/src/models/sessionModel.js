@@ -106,6 +106,7 @@ export const createSessionService = async (cine_id, film_id, schedules) => {
     client.release();
   }
 };
+
 export const updateSessionService = async (id, cine_id, film_id, schedules) => {
   const client = await pool.connect();
   try {
@@ -174,7 +175,7 @@ export const getSessionsByCineIdService = async (cine_id) => {
   const result = await pool.query(
     `
       SELECT 
-     s.id,
+      s.id,
       f.id as film_id,
       f.film_name,
       f.gender,
@@ -208,7 +209,7 @@ export const getSessionsByFilmService = async (film_id) => {
   const result = await pool.query(
     `
     SELECT 
-         s.id,
+      s.id,
       f.id as film_id,
       f.film_name,
       f.gender,
