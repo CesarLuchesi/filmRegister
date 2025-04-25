@@ -12,7 +12,6 @@ const createCineTable = async () => {
     `;
     try {
         await pool.query(queryText)
-        console.log("Cine table created if not exists")
     } catch (error) {
         console.log("Error creating cine table : ", error)
     }

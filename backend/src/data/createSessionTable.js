@@ -20,9 +20,7 @@ const createSessionTable = async () => {
     `;
   try {
     await pool.query(querySchedule);
-    console.log("Session schedule table created if not exists");
     await pool.query(queryText);
-    console.log("Session table created if not exists");
   } catch (error) {
     console.log("Error creating Session table : ", error);
   }

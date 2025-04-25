@@ -23,9 +23,7 @@ const createFilmTable = async () => {
     `;
   try {
     await pool.query(createEnumQuery);
-    console.log("Enum film classification created if not exists");
     await pool.query(queryText);
-    console.log("film table created if not exists");
   } catch (error) {
     console.log("Error creating film table : ", error);
   }

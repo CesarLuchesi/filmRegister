@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const FilmListContainer = styled.div`
   padding: 2rem;
-  margin-top: 20px;
+  margin-top: 84px;
 `;
 
 const FilmGrid = styled.div`

@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const CineListContainer = styled.div`
   padding: 2rem;
-  margin-top: 20px;
+  margin-top: 84px;
   display: grid;
   width: 100%;
   align-items: center;
@@ -38,24 +38,6 @@ const CineTitle = styled.h3`
 const CineTexts = styled.p`
   color: #333;
   margin: 0.25rem 0;
-`;
-
-const RoomContainer = styled.div`
-  margin-top: 1rem;
-`;
-
-const RoomList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-`;
-
-const RoomBadge = styled.span`
-  background-color: #f0f0f0;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  color: #333;
 `;
 
 const LoadingMessage = styled.p`

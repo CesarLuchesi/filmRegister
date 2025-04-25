@@ -6,6 +6,7 @@ import SessionForm from "./SessionForm";
 
 const PageContainer = styled.div`
   padding: 2rem;
+  margin-top: 84px;
 `;
 
 const Title = styled.h1`
