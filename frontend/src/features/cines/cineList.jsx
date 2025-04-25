@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCines, clearError } from './cineSlice';
-import styled from 'styled-components';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCines, clearError } from "./cineSlice";
+import styled from "styled-components";
 
 const CineListContainer = styled.div`
   padding: 2rem;
   margin-top: 20px;
+  display: grid;
+  width: 100%;
+  align-items: center;
 `;
 
 const CineGrid = styled.div`
@@ -76,18 +79,18 @@ const CineList = () => {
     };
   }, [dispatch]);
 
-  if (status === 'loading') {
+  if (status === "loading") {
     return <LoadingMessage>Carregando cinemas...</LoadingMessage>;
   }
 
-  if (status === 'failed') {
+  if (status === "failed") {
     return <ErrorMessage>Erro ao carregar os cinemas: {error}</ErrorMessage>;
   }
 
   if (!cines?.data) {
     return <LoadingMessage>Nenhum cinema encontrado</LoadingMessage>;
   }
-console.log({cines});
+  console.log({ cines });
   return (
     <CineListContainer>
       <h2>Lista de Cinemas</h2>
@@ -95,9 +98,8 @@ console.log({cines});
         {cines.data.map((cine) => (
           <CineCard key={cine.id}>
             <CineTitle>Cinema: {cine.cine_name}</CineTitle>
-            <CineTexts>
-            </CineTexts>
-              <strong>Estado:</strong> {cine.state}
+            <CineTexts></CineTexts>
+            <strong>Estado:</strong> {cine.state}
             <CineTexts>
               <strong>Cidade:</strong> {cine.city}
             </CineTexts>

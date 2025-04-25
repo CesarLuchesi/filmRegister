@@ -9,6 +9,7 @@ import FilmList from "./features/films/filmList";
 import "./index.css";
 import SessionsList from "./features/sessions/sessionList";
 import CineList from "./features/cines/cineList";
+import RegisterPage from "./features/register/RegisterPage";
 
 const root = document.getElementById("root");
 
@@ -21,6 +22,7 @@ ReactDOM.createRoot(root).render(
         <Route path="/filmes" element={<FilmList />} />
         <Route path="/sessao" element={<SessionsList />} />
         <Route path="/cinemas" element={<CineList />} />
+        <Route path="/cadastrar" element={<RegisterPage />} />
       </Routes>
     </BrowserRouter>
   </Provider>
