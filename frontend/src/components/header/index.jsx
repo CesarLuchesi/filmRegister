@@ -68,7 +68,7 @@ const Header = () => {
       <Nav>
         <NavLink to="/cinemas">Cinemas</NavLink>
         <NavLink to="/filmes">Filmes</NavLink>
-        <NavLink to="/sessoes">Sessões</NavLink>
+        <NavLink to="/sessao">Sessões</NavLink>
         <NavLink to="/cadastrar">Cadastrar</NavLink>
       </Nav>
     </HeaderContainer>

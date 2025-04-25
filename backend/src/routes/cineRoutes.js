@@ -10,7 +10,7 @@ import validateCine from "../middlewares/inputValidator.js";
 
 const router = express.Router();
 
-router.get("/cine", getAllCines);
+router.get("/cines", getAllCines);
 router.get("/cine/:id", getCineById);
 router.post("/cine", validateCine, createCine);
 router.put("/cine/:id", validateCine, updateCine);
