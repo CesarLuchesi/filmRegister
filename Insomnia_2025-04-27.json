@@ -1,0 +1,1447 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.0.2"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 42.376,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/sessions/film/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1454"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"5ae-qhX0CmpnJa3c+Xl5ActRcqTP5N4\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 25 Apr 2025 14:26:27 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 1454,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Sessions retrieved successfully\",\"data\":[{\"id\":17,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"}]},{\"id\":52,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":1,\"cine_name\":\"kINOPLEX\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Terça\",\"time\":\"20:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"20:00:00\"}]},{\"id\":54,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":4,\"cine_name\":\"Centerplex\",\"city\":\"Limeira\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Sexta\",\"time\":\"10:30:00\"}]},{\"id\":87,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":5,\"cine_name\":\"Centerplex\",\"city\":\"Limeira\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Terça\",\"time\":\"20:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"10:00:00\"}]}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 42.376,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET session by film ID"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 3.738,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/sessions/cine/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "696"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"2b8-cE6ihhe6sd7948rdAugc9wjWxyE\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 23 Apr 2025 03:51:38 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 696,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Sessions retrieved successfully\",\"data\":[{\"id\":17,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"}]}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.738,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET session by cine ID"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 141.239,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5001/api/sessions/18",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "136"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"88-J3r5gyU95Guj5QjFwVHEc4xDS7c\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 23 Apr 2025 03:57:15 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 136,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Session deleted successfully\",\"data\":{\"id\":18,\"cine_id\":1,\"film_id\":4,\"created_at\":\"2025-04-23T03:26:33.359Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 141.239,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DELETE session"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 27.286,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:5001/api/sessions/17",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"cine_id\": \"2\",\n  \"film_id\": \"2\",\n  \"schedules\": [\n\t\t\t{ \"day_week\": \"Segunda\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Segunda\", \"time\": \"16:00\"},\n\t\t{ \"day_week\": \"Segunda\", \"time\": \"17:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"16:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"17:00\"},\n\t\t{ \"day_week\": \"Quarta\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Quinta\", \"time\": \"15:00\"},\n \t\t{ \"day_week\": \"Sexta\", \"time\": \"14:00\"},\n\t\t{ \"day_week\": \"Sábado\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Domingo\", \"time\": \"15:00\"}\n  ]\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "594"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"252-zrjmlKE4dD8KZVwskyA57mGVk8I\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 23 Apr 2025 03:48:38 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 594,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Session updated successfully\",\"data\":{\"id\":17,\"cine_id\":2,\"film_id\":2,\"created_at\":\"2025-04-23T03:10:48.320Z\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"}]}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 27.286,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "PUT update session data"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 3.367,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/sessions/17",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "693"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"2b5-FZ8G9oOZvSO4txvxDR6i4/zH+WM\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 23 Apr 2025 03:50:23 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 693,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Session retrieved successfully\",\"data\":{\"id\":17,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"}]}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.367,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET session by ID"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 3.007,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "2209"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"8a1-cVeTioHavya3jJCdjlmR0lh/W9o\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 25 Apr 2025 13:43:18 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 2209,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Sessions retrieved successfully\",\"data\":[{\"id\":17,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"}]},{\"id\":19,\"film_id\":4,\"film_name\":\"Minecraft\",\"gender\":\"Animação\",\"duration\":\"101\",\"classification\":\"livre\",\"cine_id\":1,\"cine_name\":\"kINOPLEX\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"}]},{\"id\":52,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":1,\"cine_name\":\"kINOPLEX\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"20:00:00\"},{\"day_week\":\"Terça\",\"time\":\"20:00:00\"}]},{\"id\":53,\"film_id\":6,\"film_name\":\"CAPITÃO AMÉRICA - ADMIRÁVEL MUNDO NOVO\",\"gender\":\"AÇÃO / AVENTURA\",\"duration\":\"120\",\"classification\":\"14\",\"cine_id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Domingo\",\"time\":\"08:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"08:00:00\"},{\"day_week\":\"Terça\",\"time\":\"08:00:00\"},{\"day_week\":\"Terça\",\"time\":\"10:00:00\"}]},{\"id\":54,\"film_id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"cine_id\":4,\"cine_name\":\"Centerplex\",\"city\":\"Limeira\",\"state\":\"SP\",\"schedules\":[{\"day_week\":\"Sexta\",\"time\":\"10:30:00\"}]}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.007,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET all sessions"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 54.798,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"cine_id\": \"1\",\n  \"film_id\": \"4\",\n  \"schedules\": [\n\t\t\t{ \"day_week\": \"Segunda\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Segunda\", \"time\": \"16:00\"},\n\t\t{ \"day_week\": \"Segunda\", \"time\": \"17:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"16:00\"},\n\t\t{ \"day_week\": \"Terça\", \"time\": \"17:00\"},\n\t\t{ \"day_week\": \"Quarta\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Quinta\", \"time\": \"15:00\"},\n \t\t{ \"day_week\": \"Sexta\", \"time\": \"14:00\"},\n\t\t{ \"day_week\": \"Sábado\", \"time\": \"15:00\"},\n\t\t{ \"day_week\": \"Domingo\", \"time\": \"15:00\"}\n  ]\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "594"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"252-naauuaOTfJnMVcL7sNm9mF2QfqM\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 23 Apr 2025 03:57:22 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 594,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":201,\"message\":\"Session created successfully\",\"data\":{\"id\":19,\"cine_id\":1,\"film_id\":4,\"created_at\":\"2025-04-23T03:57:22.231Z\",\"schedules\":[{\"day_week\":\"Segunda\",\"time\":\"15:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"16:00:00\"},{\"day_week\":\"Segunda\",\"time\":\"17:00:00\"},{\"day_week\":\"Terça\",\"time\":\"15:00:00\"},{\"day_week\":\"Terça\",\"time\":\"16:00:00\"},{\"day_week\":\"Terça\",\"time\":\"17:00:00\"},{\"day_week\":\"Quarta\",\"time\":\"15:00:00\"},{\"day_week\":\"Quinta\",\"time\":\"15:00:00\"},{\"day_week\":\"Sexta\",\"time\":\"14:00:00\"},{\"day_week\":\"Sábado\",\"time\":\"15:00:00\"},{\"day_week\":\"Domingo\",\"time\":\"15:00:00\"}]}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 54.798,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "POST create new session"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 55.26,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5001/api/films/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "393"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"189-jrYEypzyj+w+VqVaLUGCPUaLwmk\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Apr 2025 01:41:33 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 393,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Film deleted successfully\",\"data\":{\"id\":3,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"launch\":\"2001-06-22T03:00:00.000Z\",\"synopsis\":\"Um ogro tem sua vida invadida por personagens de contos de fadas que acabam com a tranquilidade de seu lar. Ele faz um acordo pra resgatar uma princesa.\",\"created_at\":\"2025-04-21T21:36:06.351Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 55.26,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DELETE film"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 50.707,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:5001/api/films/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t \"film_name\":\"Shrek\",\n  \"gender\":\"Animação\",\n  \"duration\":\"89\",\n  \"classification\":\"livre\",\n  \"launch\":\"22/06/2001\",\n  \"synopsis\":\"alterei descrição PUT\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "264"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"108-cp4yDS16oU7t4JFmwoZ84Y3enDY\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 21 Apr 2025 19:07:07 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 264,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Film updated successfully\",\"data\":{\"id\":1,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"launch\":\"2001-06-22T03:00:00.000Z\",\"synopsis\":\"alterei descrição PUT\",\"created_at\":\"2025-04-21T19:03:51.213Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 50.707,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "PUT update film data"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 1.934,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/films/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "395"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"18b-Cm/VG6SVPs9oZIZ2P5sW/BdlymM\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 21 Apr 2025 19:31:59 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 395,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Film retrieved successfully\",\"data\":{\"id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"launch\":\"2001-06-22T03:00:00.000Z\",\"synopsis\":\"Um ogro tem sua vida invadida por personagens de contos de fadas que acabam com a tranquilidade de seu lar. Ele faz um acordo pra resgatar uma princesa.\",\"created_at\":\"2025-04-21T19:31:26.686Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1.934,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET films by ID"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 154.507,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/films",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "2278"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"8e6-+dNJUoG7wuMywW4qwJiXhj2/2CY\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 25 Apr 2025 13:42:23 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 2278,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Films retrieved successfully\",\"data\":[{\"id\":2,\"film_name\":\"Shrek\",\"gender\":\"Animação\",\"duration\":\"89\",\"classification\":\"livre\",\"launch\":\"2001-06-22T03:00:00.000Z\",\"synopsis\":\"Um ogro tem sua vida invadida por personagens de contos de fadas que acabam com a tranquilidade de seu lar. Ele faz um acordo pra resgatar uma princesa.\",\"created_at\":\"2025-04-21T19:31:26.686Z\"},{\"id\":4,\"film_name\":\"Minecraft\",\"gender\":\"Animação\",\"duration\":\"101\",\"classification\":\"livre\",\"launch\":\"2025-04-03T03:00:00.000Z\",\"synopsis\":\"Um portal misterioso atrai quatro desajustados para o Overworld, uma terra das maravilhas bizarras e cúbicas que prospera com a imaginação. Para voltar para casa, eles têm que dominar o terreno enquanto embarcam em uma missão mágica com um construtor inesperado chamado Steve.\",\"created_at\":\"2025-04-22T01:42:41.241Z\"},{\"id\":5,\"film_name\":\"Minecraft\",\"gender\":\"Animação\",\"duration\":\"101\",\"classification\":\"livre\",\"launch\":\"2025-04-03T03:00:00.000Z\",\"synopsis\":\"Um portal misterioso atrai quatro desajustados para o Overworld, uma terra das maravilhas bizarras e cúbicas que prospera com a imaginação. Para voltar para casa, eles têm que dominar o terreno enquanto embarcam em uma missão mágica com um construtor inesperado chamado Steve.\",\"created_at\":\"2025-04-25T03:42:01.047Z\"},{\"id\":6,\"film_name\":\"CAPITÃO AMÉRICA - ADMIRÁVEL MUNDO NOVO\",\"gender\":\"AÇÃO / AVENTURA\",\"duration\":\"120\",\"classification\":\"14\",\"launch\":\"2025-02-13T03:00:00.000Z\",\"synopsis\":\"Capitão América: Admirável Mundo Novo é uma continuação da série Falcão e o Soldado Invernal (2021). Recém-eleito presidente dos Estados Unidos, Thadeus Ross (Harrison Ford) convida Sam Wilson (Anthony Mackie) para se tornar o novo Capitão América e liderar uma nova equipe de Vingadores. Como a relação entre eles nunca foi das melhores, Wilson pode ter dores de cabeça pela frente. Pra piorar, Sidewinder (Giancarlo Esposito), da Sociedade Serpente, mostra ter outros planos para a América, enquanto Líder (Tim Blake Nelson), vilão com incrível controle da mente, ressurge e a ameaça do Hulk Vermelho fica próxima da realidade. Penúltimo filme da fase 5 do Universo Cinematográfico Marvel (MCU).\",\"created_at\":\"2025-04-25T03:50:56.559Z\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 154.507,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET all films"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 47.51,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/films",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t \"film_name\":\"Minecraft\",\n  \"gender\":\"Animação\",\n  \"duration\":\"101\",\n  \"classification\":\"livre\",\n  \"launch\":\"03/04/2025\",\n  \"synopsis\":\"Um portal misterioso atrai quatro desajustados para o Overworld, uma terra das maravilhas bizarras e cúbicas que prospera com a imaginação. Para voltar para casa, eles têm que dominar o terreno enquanto embarcam em uma missão mágica com um construtor inesperado chamado Steve.\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "528"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"210-yYojsBv4RcSS89q2F+uIeB0dxy0\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 25 Apr 2025 03:42:01 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 528,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":201,\"message\":\"Film created successfully\",\"data\":{\"id\":5,\"film_name\":\"Minecraft\",\"gender\":\"Animação\",\"duration\":\"101\",\"classification\":\"livre\",\"launch\":\"2025-04-03T03:00:00.000Z\",\"synopsis\":\"Um portal misterioso atrai quatro desajustados para o Overworld, uma terra das maravilhas bizarras e cúbicas que prospera com a imaginação. Para voltar para casa, eles têm que dominar o terreno enquanto embarcam em uma missão mágica com um construtor inesperado chamado Steve.\",\"created_at\":\"2025-04-25T03:42:01.047Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 47.51,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "POST create new film"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 45.802,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5001/api/cine/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.2"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "162"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a2-BGRlEVCl2dqY406Qx3e6pQbq+OM\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 21 Apr 2025 17:52:06 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 162,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Cine deleted successfully\",\"data\":{\"id\":1,\"cinename\":\"Kinoplex2\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-20T22:11:05.408Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 45.802,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DELETE cinema"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 42.186,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:5001/api/cine/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/10.1.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						},
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"cineName\": \"Kinoplex2\",\n\t\"city\": \"Campinas\",\n\t\"state\": \"SP\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "162"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a2-jm2a/2Rxvlpf06FDCkLHILcAuOc\""
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 20 Apr 2025 22:47:21 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 162,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Cine updated successfully\",\"data\":{\"id\":1,\"cinename\":\"Kinoplex2\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-20T22:11:05.408Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 42.186,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "PUT update cine data"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 53.618,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/cine/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/10.1.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "163"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a3-T3rx+PrzbjdRYoFLTNQwRpJGNjs\""
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 20 Apr 2025 22:26:00 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 163,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Cine retrieved successfully\",\"data\":{\"id\":2,\"cinename\":\"Eldorado\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-20T22:19:29.389Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 53.618,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET cine by ID"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 3.612,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/cines",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/10.1.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						},
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "477"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"1dd-jTrxvcDgBq7MjNffwa6dgtQIu5M\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 25 Apr 2025 13:42:30 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 477,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":200,\"message\":\"Cines retrieved successfully\",\"data\":[{\"id\":1,\"cine_name\":\"kINOPLEX\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-21T18:59:19.224Z\"},{\"id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-22T01:41:07.014Z\"},{\"id\":3,\"cine_name\":\"Kinoplex\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-25T03:37:34.535Z\"},{\"id\":4,\"cine_name\":\"Centerplex\",\"city\":\"Limeira\",\"state\":\"SP\",\"created_at\":\"2025-04-25T05:32:04.006Z\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.612,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET all Cines"
+			},
+			{
+				"startedDateTime": "2025-04-27T18:09:20.377Z",
+				"time": 155.242,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/cine",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/10.1.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"cine_name\": \"Cinemark\",\n\t\"city\":  \"Campinas\",\n\t\"state\": \"SP\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "162"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a2-pPFWylvcIS/dLOVCOW02WRzTk1M\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Apr 2025 01:41:07 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 162,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":201,\"message\":\"Cine created successfully\",\"data\":{\"id\":2,\"cine_name\":\"Cinemark\",\"city\":\"Campinas\",\"state\":\"SP\",\"created_at\":\"2025-04-22T01:41:07.014Z\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 155.242,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "POST create new cinema"
+			}
+		]
+	}
+}
